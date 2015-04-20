@@ -1,0 +1,102 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.button{
+  width: 100px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 38px;
+  padding: 8px 15px 8px 19px;
+  border-radius: 10px;
+  background-color: #0b82e3;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.button.signup {
+  width: 100px;
+  margin-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  float: none;
+  border-radius: 10px;
+  background-color: #0ac454;
+  -webkit-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  font-size: 18px;
+}
+.button.signup:hover {
+  background-color: #05a846;
+}
+
+
+.button.signin{
+  width: 100px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 38px;
+  padding: 8px 15px 8px 19px;
+  border-radius: 10px;
+  background-color: #0b82e3;
+  -webkit-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.button.signin:hover {
+  background-color: #0b82e3
+}
+
+
+.welcomepage {
+  background-color: white;
+}
+.logocatch {
+  padding-top: 200px;
+  text-align: center;
+  list-style-type: none;
+}
+.logoimage {
+  margin-left: 200px;
+  float: left;
+  clear: none;
+}
+.brandlogo {
+  text-align: center;
+}
+.logo {
+  margin-bottom: 0px;
+  padding-top: 150px;
+  padding-bottom: 8px;
+}
+.titlelogo {
+  margin-top: 6px;
+  margin-bottom: 7px;
+  padding-bottom: 0px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .logocatch {
+    position: relative;
+    z-index: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .logoimage {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 479px) {
+}

@@ -11,3 +11,5 @@ class CreateWikis < ActiveRecord::Migration
     add_foreign_key :wikis, :users
   end
 end
+
+

@@ -3,6 +3,7 @@ class WikisController < ApplicationController
   before_action :set_wiki, except: [:index, :new, :create]
   def index
     @wikis = Wiki.all
+    authorize @wikis
   end
 
   def show
@@ -10,10 +11,12 @@ class WikisController < ApplicationController
 
   def new
     @wiki = Wiki.new
+    authorize @wikis
   end
 
   def create
     @wiki = current_user.wikis.build(wiki_params)
+    authorize @wikis
     if @wiki.save
       flash[:notice] = 'The wiki has been created'
       redirect_to @wiki
@@ -24,7 +27,7 @@ class WikisController < ApplicationController
   end
 
   def update
-    
+    authorize @wikis
       if @wiki.update_attributes(wiki_params)
         flash[:notice]= 'the wiki was updated'
         redirect_to @wiki
@@ -35,9 +38,11 @@ class WikisController < ApplicationController
   end
 
   def edit
+    authorize @wiki
   end
 
   def destroy
+    authorize @wiki
     if @wiki.delete
       flash[:notice] = 'the wiki has been deleted'
       redirect_to wikis_path

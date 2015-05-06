@@ -1,15 +1,17 @@
-<div id="background_page">
+<body id="background_page">
   <div class="container text-center">
-    <div class="logo">
+    <div class="container_blocipedia">
+      <div class="logo">
       <%=image_tag("Wikipedia_sphere_copy.png", alt: "blocipedia logo", class: "logo")%>
         <h3 class='logo_title'>Create and share markdown wikis</h3>
         <div id="login">
         <%= link_to 'Sign in', new_user_session_path, class: 'sign_in btn btn-default'%>
         <%= link_to 'Sign up', new_user_registration_path, class: 'signup btn btn-success' %>
         </div>
-    </div>
+      </div>  
+    </div>   
   </div>
-</div>
+</body>
 
 
       

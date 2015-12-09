@@ -1,9 +1,10 @@
 
 
   <%= simple_form_for @wiki do |f| %>
-
+  
     <%= f.input :title, placeholder: "Enter wiki title" %>
     <%= f.input :body, rows: 8, placeholder: "Enter wiki body" %>
     <%= f.input :private %>
     <%= f.button :submit %>
+
   <% end %>

@@ -26,5 +26,9 @@ class User < ActiveRecord::Base
     self.role ||= 'standard'
   end
 
+  def upgrade_account
+    self.role = 'premium'
+  end
+
 
 end

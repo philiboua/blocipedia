@@ -11,12 +11,12 @@ class WikisController < ApplicationController
 
   def new
     @wiki = Wiki.new
-    authorize @wikis
+    authorize @wiki
   end
 
   def create
     @wiki = current_user.wikis.build(wiki_params)
-    authorize @wikis
+    authorize @wiki
     if @wiki.save
       flash[:notice] = 'The wiki has been created'
       redirect_to @wiki
@@ -27,7 +27,7 @@ class WikisController < ApplicationController
   end
 
   def update
-    authorize @wikis
+    authorize @wiki
       if @wiki.update_attributes(wiki_params)
         flash[:notice]= 'the wiki was updated'
         redirect_to @wiki

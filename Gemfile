@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'faker'
+gem 'stripe'
 gem 'pundit'
 gem 'simple_form', '~> 3.1.0'
 gem 'figaro', '1.0'

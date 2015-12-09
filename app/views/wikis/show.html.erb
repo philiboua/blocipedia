@@ -1,8 +1,9 @@
 
-
 <h1>
   <%= @wiki.title %>
 </h1>
+
 <%= link_to "Delete", @wiki, method: :delete, class: "btn btn-success" %>
 <%= link_to "edit", edit_wiki_path(@wiki), class: 'btn btn-default' %>
+
 <p> <%= @wiki.body %> </p>
